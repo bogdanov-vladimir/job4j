@@ -1,16 +1,26 @@
 package ru.job4j.calculate;
 
+/**
+* @author Bogdanov Vladimir (bogd_vlad@mail.ru)
+* @version $Id$
+* @since 0.1
+*/
 public class Calculate{
 
 	/**
-	*Вывод строки "Hello word" в консоль
-	* @author Bogdanov Vladimir (bogd_vlad@mail.ru)
-	* @version 1.0
-	* @param args - arg
-	* @since 06.09.2018
+	*Main	
+	* @param args - args
 	*/
 	public static void main(String args[]){
 		System.out.println("Hello word!");
+	}
+	
+	/**
+	* @param name -your name
+	* @return echo + your name
+	*/
+	public String echo(String name){
+		return "Echo, echo, echo : "+ name;
 	}
 	
 	

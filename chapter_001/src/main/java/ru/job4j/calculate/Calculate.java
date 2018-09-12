@@ -6,27 +6,19 @@ package ru.job4j.calculate;
 * @since 0.1
 */
 public class Calculate {
-
-	/**
-	*Main
-	*/
-	public static void main() {
-		/* main(); */
-	}
-
 	/**
 	*Main	
 	* @param args - args
 	*/
 	public static void main(String[] args) {
-		System.out.println("Hello word!");
+		System.out.println(echo("VladimirBogdanov"));
 	}
 	
 	/**
 	* @param name -your name
 	* @return echo + your name
 	*/
-	public String echo(String name) {
+	private static String echo(String name) {
 		return "Echo, echo, echo : " + name;
 	}
 	

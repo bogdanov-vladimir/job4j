@@ -8,7 +8,7 @@ public class Calculator {
     * @param first : first, second : second
     * return void
     */
-    public void add (double first, double second) {
+    public void add(double first, double second) {
         result = first + second;
     }
 
@@ -17,7 +17,7 @@ public class Calculator {
      * @param first : first, second : second
      * @return void
      */
-    public void substract (double first, double second) {
+    public void substract(double first, double second) {
         result = first - second;
     }
 
@@ -26,10 +26,12 @@ public class Calculator {
      * @param first : first, second : second
      * @return void
      */
-    public void div (double first, double second) {
-        if (second > 0) result = first / second;
-        else
+    public void div(double first, double second) {
+        if (second > 0) {
+            result = first / second;
+        } else {
             result = 0;
+        }
     }
 
     /**
@@ -37,11 +39,11 @@ public class Calculator {
      * @param first : first, second : second
      * @return void
     */
-    public void multiple (double first, double second) {
+    public void multiple(double first, double second) {
         result = first * second;
     }
 
-    public double getResult () {
+    public double getResult() {
         return this.result;
     }
 }

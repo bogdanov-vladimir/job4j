@@ -18,7 +18,7 @@ public class Calculate {
 	* @param name -your name
 	* @return echo + your name
 	*/
-	private static String echo(String name) {
+	public static String echo(String name) {
 		return "Echo, echo, echo : " + name;
 	}
 	

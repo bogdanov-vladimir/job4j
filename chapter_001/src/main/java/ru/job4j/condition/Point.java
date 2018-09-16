@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
 /**
- *
+ * Расчет расстояния между двумя точками в системе координат
  */
 public class Point {
     /**

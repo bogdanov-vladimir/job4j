@@ -29,7 +29,7 @@ public class Point {
 
         int x1 = a.x;
         int y1 = a.y;
-        int x2 = b.y;
+        int x2 = b.x;
         int y2 = b.y;
 
         double result = Math.sqrt(
@@ -39,7 +39,7 @@ public class Point {
         return result;
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Point a = new Point(0, 1);
         Point b = new Point(2, 5);
 
@@ -51,5 +51,5 @@ public class Point {
         double result = a.distanceTo(b);
 
         System.out.println("Расстояние между точками = " + result);
-    }
+    }*/
 }

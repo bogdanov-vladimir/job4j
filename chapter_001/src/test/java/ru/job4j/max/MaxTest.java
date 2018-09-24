@@ -9,9 +9,12 @@ public class MaxTest {
     @Test
     public void whereMaxNumber() {
         Max max = new Max();
-        int resultFunc = max.max(5, 15);
+        int resultFuncOne = max.max(5, 15);
+        int resultFuncTwo = max.max(15, 5);
         int result = 15;
 
-        assertThat(result, is(resultFunc));
+        assertThat(result, is(resultFuncOne));
+
+        assertThat(result, is(resultFuncTwo));
     }
 }

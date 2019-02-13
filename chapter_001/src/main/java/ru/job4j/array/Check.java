@@ -11,16 +11,10 @@ package ru.job4j.array;
  */
 public class Check {
     public boolean mono(boolean[] array) {
-        boolean result = true;        
-        boolean firstItem = false;
+        boolean result = true;       
         
-        for (int i = 0; i < array.length; i++) {
-            if (i == 0) {
-                firstItem = array[i];
-                continue;
-            }
-            
-            if (array[i] != firstItem) {
+        for (int i = 0; i < array.length; i++) {            
+            if (array[0] != array[i]) {
                 result = false;
                 break;
             }            

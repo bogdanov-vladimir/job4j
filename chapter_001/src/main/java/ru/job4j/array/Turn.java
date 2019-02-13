@@ -23,6 +23,6 @@ public class Turn {
             array[len - i] = beg;            
         }
         
-        return array;
+        return array; 
     }
 }

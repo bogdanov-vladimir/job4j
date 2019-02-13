@@ -15,14 +15,9 @@ public class Turn {
         
         int len = array.length - 1;
         
-        for (int i = 0; i < array.length; i++) {            
-            
-            if (i >= array.length - i) {
-                break;
-            }
-            
+        for (int i = 0; i < array.length / 2; i++) {
             int beg = array[i];
-            int end = array[len - i];
+            int end = array[len - i];            
             
             array[i] = end;
             array[len - i] = beg;            

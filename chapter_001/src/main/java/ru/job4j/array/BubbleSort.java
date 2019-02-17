@@ -5,6 +5,46 @@ package ru.job4j.array;
  * @author Администратор
  */
 public class BubbleSort {
+    /**
+     * Вариант второй
+     * @param array
+     * @return 
+     */
+    public int[] sortBubble(int[] array) {
+        boolean link = false;
+        
+        do { 
+            link = setSort(array); 
+        }
+        while (link);
+        
+        return array;
+    }
+    
+    boolean setSort(int[] array) {
+        boolean result = false;       
+        
+        for (int i = 0; i < array.length; i++) {
+            if (i == 0) {
+                continue;
+            }
+
+            if (array[i] < array[i - 1]) {
+                int curVal = array[i];
+                array[i] = array[i - 1];
+                array[i - 1] = curVal;
+                result = true;
+            }
+        }
+        
+        return result;
+    }
+    
+    /**
+     * Вариант первый
+     * @param array
+     * @return 
+     */
     public int[] sort(int[] array) {        
         for (int i = 0; i < array.length; i++) {
             array[i] = getMinVal(array, i);

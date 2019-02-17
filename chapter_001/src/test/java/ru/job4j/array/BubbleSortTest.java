@@ -15,7 +15,8 @@ public class BubbleSortTest {
         
         int[] inArr = {1, 5, 4, 0, 10};
         int[] result = {0, 1, 4, 5, 10};
-        int[] resultFunc = bubbleSort.sort(inArr);
+        int[] resultFunc = bubbleSort.sortBubble(inArr);
+        assertThat(result, is(resultFunc));
         
         inArr = new int[] {1, 5, 4, 0, 0, 10};
         result = new int[] {0, 0, 1, 4, 5, 10};

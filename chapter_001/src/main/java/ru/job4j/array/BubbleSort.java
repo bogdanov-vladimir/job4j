@@ -10,13 +10,23 @@ public class BubbleSort {
      * @param array
      * @return 
      */
-    public int[] sortBubble(int[] array) {
-        boolean link = false;
+    public int[] sortBubble(int[] array) {       
+        for (int i = 0; i < array.length; i++) {           
+            for (int j = i; j < array.length; j++) {
+                if (array[i] > array[j]) {
+                    int curVal = array[i];
+                    array[i] = array[j];
+                    array[j] = curVal;
+                }
+            }
+        }
+        
+        /*boolean link = false;
         
         do { 
             link = setSort(array); 
         }
-        while (link);
+        while (link);*/
         
         return array;
     }

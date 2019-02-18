@@ -20,7 +20,7 @@ public class BubbleSortTest {
         
         inArr = new int[] {1, 5, 4, 0, 0, 10};
         result = new int[] {0, 0, 1, 4, 5, 10};
-        resultFunc = bubbleSort.sort(inArr);
+        resultFunc = bubbleSort.sortBubble(inArr);
         
         assertThat(result, is(resultFunc));
         

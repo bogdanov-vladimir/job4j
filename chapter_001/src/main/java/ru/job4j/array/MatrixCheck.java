@@ -16,21 +16,17 @@ public class MatrixCheck {
         
         if (data.length > 0) {
            iDiagCurrentIdx = data[0].length - 1; 
-        }
+        }        
         
-        for (int col = 0; col < data.length; col++) {          
+        for (int row = 0; row < data.length; row++) {
             
-            for (int row = 0; row < data[col].length; row++) {             
-                
-                if (row == iDiagCurrentIdx) {
-                    
-                    if (!data[col][row]) {
-                        result = false;
-                    }    
-                    
-                    iDiagCurrentIdx--;
+            if (iDiagCurrentIdx >= 0) {                
+                if (!data[row][iDiagCurrentIdx]) {
+                    result = false;
                 }
-            }            
+            }
+            
+            iDiagCurrentIdx--;
         }
         
         return result;

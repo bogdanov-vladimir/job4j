@@ -30,8 +30,8 @@ public class MatrixCheckTest {
                 {false, true, false},
                 {true, false, false}
         };
-        resulFunc = matrixCheck.mono(matrix);
         
+        resulFunc = matrixCheck.mono(matrix);        
         assertThat(resulFunc, is(true));
      }
 }

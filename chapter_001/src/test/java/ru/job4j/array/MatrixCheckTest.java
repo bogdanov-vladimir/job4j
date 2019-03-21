@@ -26,9 +26,9 @@ public class MatrixCheckTest {
         assertThat(resulFunc, is(false));        
         
         matrix = new boolean[][]{
-                {false, false, true},
+                {true, false, true},
                 {false, true, false},
-                {true, false, false}
+                {true, false, true}
         };
         
         resulFunc = matrixCheck.mono(matrix);        

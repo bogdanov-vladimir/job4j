@@ -1,5 +1,8 @@
 package ru.job4j.condition;
 
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
+
 /**
  * Расчет расстояния между двумя точками в системе координат
  */
@@ -24,23 +27,11 @@ public class Point {
      * @return Расстояние между двумя точками в системе координат
      */
     public double distanceTo(Point that) {
-        Point a = this;
-        Point b = that;
-
-        int x1 = a.x;
-        int y1 = a.y;
-        int x2 = b.x;
-        int y2 = b.y;
-
-        double result = Math.sqrt(
-                Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)
-        );
-
-        return result;
+        return sqrt(pow(this.x - that.x, 2) + pow(this.y - that.y, 2));
     }
 
-    /*public static void main(String[] args) {
-        Point a = new Point(0, 1);
+    public static void main(String[] args) {
+        /*Point a = new Point(0, 1);
         Point b = new Point(2, 5);
 
         System.out.println("x1 = " + a.x);
@@ -50,6 +41,11 @@ public class Point {
 
         double result = a.distanceTo(b);
 
-        System.out.println("Расстояние между точками = " + result);
-    }*/
+        System.out.println("Расстояние между точками = " + result);*/
+
+        Point a = new Point(0, 0);
+        Point b = new Point(0, 2);
+        double dist = a.distanceTo(b);
+        System.out.println(dist);
+    }
 }

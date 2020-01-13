@@ -13,4 +13,12 @@ public class PointTest {
         assertThat(resultFunc, closeTo(result, 0.1));
     }
 
+    @Test
+    public void calcPoint3d() {
+        Point point = new Point(1, 2, 3);
+        double resultFunc = point.distance3d(new Point(3, 2, 1));
+        double result = 2.83;
+        assertThat(resultFunc, closeTo(result, 0.1));
+    }
+
 }

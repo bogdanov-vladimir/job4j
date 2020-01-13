@@ -15,7 +15,10 @@ public class Battery {
     }
 
     public void exchange(Battery another) {
-        another.load = another.load + this.load;
+        if (this.load > 0) {
+            another.load = another.load + this.load;
+            this.load = 0;
+        }
     }
 
     public static void main(String[] args) {

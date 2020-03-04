@@ -1,4 +1,4 @@
-package ru.job4j.oop.Animals;
+package ru.job4j.oop.animals;
 
 public class Animal {
     String name;
@@ -9,6 +9,6 @@ public class Animal {
 
     public Animal(String name) {
         this.name = name;
-        System.out.println("I`m Animal, "+ name);
+        System.out.println("I`m Animal, " + name);
     }
 }

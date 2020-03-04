@@ -25,8 +25,8 @@ public class Battery {
         Battery bOne = new Battery(10);
         Battery bTwo = new Battery(100);
 
-        System.out.println("bOne.load ="+ bOne.load +", bTwo.load ="+ bTwo.load);
+        System.out.println("bOne.load =" + bOne.load + ", bTwo.load =" + bTwo.load);
         bOne.exchange(bTwo);
-        System.out.println("bOne.load ="+ bOne.load +", bTwo.load ="+ bTwo.load);
+        System.out.println("bOne.load =" + bOne.load + ", bTwo.load =" + bTwo.load);
     }
 }

@@ -1,4 +1,4 @@
-package ru.job4j.oop.ballStory;
+package ru.job4j.oop.ballstory;
 
 public class Story {
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class Story {
             ball.hi(arrAnimal[i].getName());
             arrAnimal[i].niamniam();
 
-            if(arrAnimal[i].getName().equals(sEndStory)) {
+            if (arrAnimal[i].getName().equals(sEndStory)) {
                 ball.move();
             } else {
                 ball = null;
@@ -24,7 +24,7 @@ public class Story {
             }
         }
 
-        if(ball == null) {
+        if (ball == null) {
             System.out.println("Конец!");
         }
     }

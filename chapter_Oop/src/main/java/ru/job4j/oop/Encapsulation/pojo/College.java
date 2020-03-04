@@ -1,4 +1,4 @@
-package ru.job4j.oop.Encapsulation.pojo;
+package ru.job4j.oop.encapsulation.pojo;
 
 import java.util.Date;
 
@@ -10,8 +10,8 @@ public class College {
         student.setGroup("Прикладная математика");
         student.setDateReceipt(new Date());
 
-        System.out.println("Студент: "+ student.getFio()
-                +", группа:"+ student.getGroup()
-                +", дата поступления: "+ student.getDateReceipt().toString());
+        System.out.println("Студент: " + student.getFio()
+                + ", группа:" + student.getGroup()
+                + ", дата поступления: " + student.getDateReceipt().toString());
     }
 }

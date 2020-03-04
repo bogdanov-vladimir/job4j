@@ -1,4 +1,4 @@
-package ru.job4j.oop.Professions;
+package ru.job4j.oop.professions;
 
 import java.util.Date;
 import java.util.Random;

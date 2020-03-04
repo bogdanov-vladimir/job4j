@@ -5,7 +5,7 @@ public class Cat {
     private String name;
 
     public String show() {
-        return "I`m "+ this.name +", my food: "+ this.food;
+        return "I`m " + this.name + ", my food: " + this.food;
     }
 
     public void eat(String meat) {

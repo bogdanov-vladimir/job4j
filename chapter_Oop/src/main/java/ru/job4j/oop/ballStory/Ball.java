@@ -1,4 +1,4 @@
-package ru.job4j.oop.ballStory;
+package ru.job4j.oop.ballstory;
 
 public class Ball {
     private String[] sWhoLeft = new String[5];
@@ -18,7 +18,7 @@ public class Ball {
                 break;
             }
 
-            System.out.println("Я от "+ sWhoLeft[i] +", ушел! ");
+            System.out.println("Я от " + sWhoLeft[i] + ", ушел! ");
         }
 
         if (sWhoNow != null && iNext != null) {
@@ -29,7 +29,7 @@ public class Ball {
     }
 
     public void hi(String sNow) {
-        System.out.println("Привет, "+ sNow +", я колобок");
+        System.out.println("Привет, " + sNow + ", я колобок");
         sWhoNow = sNow;
     }
 }

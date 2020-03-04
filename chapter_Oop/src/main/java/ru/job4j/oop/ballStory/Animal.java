@@ -1,4 +1,4 @@
-package ru.job4j.oop.ballStory;
+package ru.job4j.oop.ballstory;
 
 public class Animal {
     private String name;
@@ -10,7 +10,7 @@ public class Animal {
     }
 
     public String getName() {
-        System.out.println("Привет, я "+ this.name);
+        System.out.println("Привет, я " + this.name);
 
         return name;
     }

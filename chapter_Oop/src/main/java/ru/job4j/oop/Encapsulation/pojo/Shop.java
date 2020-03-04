@@ -1,4 +1,4 @@
-package ru.job4j.oop.Encapsulation.pojo;
+package ru.job4j.oop.encapsulation.pojo;
 
 public class Shop {
     public static void main(String[] args) {
@@ -15,22 +15,22 @@ public class Shop {
         }
 
 
-        for(int i = 0; i < books.length; i++) {
-            if(books[i] == null) {
-                System.out.println("i = "+ i +" = null");
+        for (int i = 0; i < books.length; i++) {
+            if (books[i] == null) {
+                System.out.println("i = " + i + " = null");
             } else {
-                System.out.println("i = "+ i +" = "+ books[i].getName());
+                System.out.println("i = " + i + " = " + books[i].getName());
             }
         }
     }
 
     private static void delete(Book[] books, int index) {
 
-        if(books[index] == null) {
-            for(int j = 0; j < books.length; j++) {
+        if (books[index] == null) {
+            for (int j = 0; j < books.length; j++) {
                 int jNext = (books.length - 1) - j;
 
-                if(books[jNext] == null || jNext < index) {
+                if (books[jNext] == null || jNext < index) {
                     continue;
                 }
 

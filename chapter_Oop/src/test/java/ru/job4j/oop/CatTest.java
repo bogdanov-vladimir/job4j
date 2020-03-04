@@ -14,7 +14,7 @@ public class CatTest {
         cat.eat(catFood);
 
         String sResultFunc = cat.show();
-        String sResult = "I`m "+ catName +", my food: "+ catFood;
+        String sResult = "I`m " + catName + ", my food: " + catFood;
 
         assertThat(sResult, is(sResultFunc));
     }

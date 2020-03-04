@@ -1,4 +1,4 @@
-package ru.job4j.oop.Professions;
+package ru.job4j.oop.professions;
 
 public class Programmer extends Engineer {
     private String code;

@@ -11,7 +11,9 @@ public class Shop {
         books[4] = new Book("Book4", 50);
 
         for (int i = 0; i < books.length; i++) {
-            delete(books, i);
+            if(books[i] == null) {
+                delete(books, i);
+            }
         }
 
 
@@ -26,18 +28,10 @@ public class Shop {
 
     private static void delete(Book[] books, int index) {
 
-        if (books[index] == null) {
-            for (int j = 0; j < books.length; j++) {
-                int jNext = (books.length - 1) - j;
-
-                if (books[jNext] == null || jNext < index) {
-                    continue;
-                }
-
-                books[index] = books[jNext];
-                books[jNext] = null;
-                break;
-            }
+        for (int i = index; i < books.length - 1; i++) {
+            books[i] = books[i + 1];
         }
+
+        books[books.length - 1] = null;
     }
 }
